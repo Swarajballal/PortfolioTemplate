@@ -1,5 +1,4 @@
 import { useCallback, useState } from "react";
-import Container from "../ui/container";
 import NavbarItem from "./NavbarItem";
 import React from "react";
 import { useNavigate } from "react-router-dom";
@@ -17,9 +16,7 @@ const NavBar = () => {
 
 
   return (
-    <Container>
-        <nav className="w-4/5 mx-auto z-10 md:p-7 xl:mt-10 bg-white rounded-full shadow-[rgba(0,_0,_0,_0.4)_20px_20px_20px_10px] 
-     relative">
+        <nav className="w-[90%] z-10 md:p-8 xl:mt-10 bg-white rounded-full shadow-[rgba(0,_0,_0,_0.4)_20px_20px_20px_10px] relative mx-auto">
             <div className="flex flex-row items-center justify-center relative">
                 <div className="flex-row gap-2 hidden lg:flex absolute">
                     {menuItems.map((item, index) => (
@@ -51,7 +48,7 @@ const NavBar = () => {
                                     }}
                                 />
                             {index === 3 && (
-                                <img src="./img/header-logo.png" loading='lazy' className="w-28 h-28 cursor-pointer" alt="homepage_logo" onClick={(() => { navigate ('/')})} />
+                                <img src="./img/header-logo.png" loading='lazy' className="w-32 h-32 cursor-pointer" alt="homepage_logo" onClick={(() => { navigate ('/')})} />
                             )}
 
 
@@ -65,7 +62,6 @@ const NavBar = () => {
             </div>
 
         </nav>
-    </Container>
   );
 };
 
