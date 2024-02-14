@@ -1,4 +1,5 @@
-import { useCallback, useState } from "react";
+import {useState } from "react";
+// import { useCallback } from "react";
 import NavbarItem from "./NavbarItem";
 import React from "react";
 import { useNavigate } from "react-router-dom";
@@ -7,12 +8,12 @@ const NavBar = () => {
     const navigate = useNavigate();
     const [active, setActive] = useState('HOME');
     const menuItems = ['HOME', 'NEWS&MEDIA', 'BLOGS', 'GALLERY', 'FOCUS AREAS', 'INITIATIVES', 'ASSEMBLY'];
-    const [showMobileMenu, setShowMobileMenu] = useState(false);  
+    // const [showMobileMenu, setShowMobileMenu] = useState(false);  
 
 
-    const toggleMobileMenu = useCallback(() => {
-        setShowMobileMenu((current) => !current);
-    }, [setShowMobileMenu]);
+    // const toggleMobileMenu = useCallback(() => {
+    //     setShowMobileMenu((current) => !current);
+    // }, [setShowMobileMenu]);
 
 
   return (
