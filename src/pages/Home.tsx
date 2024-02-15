@@ -4,6 +4,7 @@ import NavBar from "@/components/navbar/NavBar";
 import { EmblaOptionsType } from 'embla-carousel'
 import { useState } from "react";
 import React from "react"
+import { Timeline } from 'react-twitter-widgets'
 
 const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true }
 const SLIDE_COUNT = 2
@@ -13,6 +14,8 @@ const Home = () => {
 
   const [active, setActive] = useState('Youth');
   const FocusAreaItems = ['Youth', 'Women', 'Farmer', 'Education', 'HealthCare', 'Good Governance', 'Economy', 'Water'];
+
+  
 
   return (
     <>
@@ -34,7 +37,7 @@ const Home = () => {
                 <img src="./img/down.png" alt="down-arrow-profile-header"
                  className="h-8 w-2 ml-32"/>
                 <h4 className="text-lg font-semibold">About the Personality</h4>
-                <h1 className="text-4xl font-black bg-gradient-to-r from-orange-600 to-green-500 ... bg-clip-text text-transparent">Yashomati Chandrakant Thakur</h1>
+                <h1 className="text-4xl font-black bg-gradient-to-r from-violet-900 to-blue-600 ... bg-clip-text text-transparent">Yashomati Chandrakant Thakur</h1>
                 <h4 className="font-semibold mt-1">MLA (Member of Legislative Assembly, Karjat – Jamkhed)</h4>
 
                 <p className="text-start mt-6">
@@ -42,7 +45,7 @@ const Home = () => {
                 </p>
 
                 
-                  <div className="h-10 mt-4 w-fit rounded-full bg-gradient-to-r from-orange-600 via-orange-700 to-green-500 p-0.5">
+                <div className="h-10 mt-4 w-fit rounded-full bg-gradient-to-r from-violet-900 to-blue-600 p-0.5">
                     <button className="flex h-full w-full items-center justify-center bg-white rounded-full px-10 text-base font-mono font-black tracking-tight hover:cursor-pointer hover:bg-transparent hover:text-white">
                        READ MORE
                     </button>
@@ -66,7 +69,7 @@ const Home = () => {
               <img src="./img/down.png" alt="down-arrow-profile-header"
                   className="h-8 w-2"/>
                 <h4 className="text-lg font-semibold">Let's Work Together</h4>
-                <h1 className="text-5xl font-bold bg-gradient-to-r from-orange-700 to-green-600 ... bg-clip-text text-transparent font-sans">FOCUS AREAS</h1>
+                <h1 className="text-5xl font-bold bg-gradient-to-r from-violet-900 to-blue-600 ... bg-clip-text text-transparent font-sans">FOCUS AREAS</h1>
             </div>
 
             <div className="w-[90%] mx-auto mt-10">
@@ -118,7 +121,7 @@ const Home = () => {
                 </p>
 
                 
-                  <div className="h-10 mt-4 w-fit rounded-full bg-gradient-to-r from-orange-600 via-orange-700 to-green-500 p-0.5">
+                  <div className="h-10 mt-4 w-fit rounded-full bg-gradient-to-r from-violet-900 to-blue-600 p-0.5">
                     <button className="flex h-full w-full items-center justify-center bg-white rounded-full px-10 text-base font-mono font-black tracking-tight hover:cursor-pointer hover:bg-transparent hover:text-white">
                        READ MORE
                     </button>
@@ -128,40 +131,40 @@ const Home = () => {
 
          </section>
 
-         <section className="flex w-full h-screen relative items-center justify-center gap-28" style={{ backgroundImage: "url('./img/YT-Form-Bg.png')", backgroundSize: 'cover', backgroundColor: '#EAEAEA' }}>
-            <div className="bg-[#fac53b] w-4/12 h-min pb-16 rounded-3xl mt-32">
+         <section className="flex w-full relative items-center justify-center gap-28" style={{ backgroundImage: "url('./img/YT-Form-Bg.png')", backgroundSize: 'cover', backgroundColor: '#EAEAEA' }}>
+            <div className="bg-blue-950 w-4/12 h-min pb-16 rounded-3xl mt-32">
                   <div className="h-full w-[90%] mx-auto mt-10 flex flex-col items-start gap-4">
-                      <h1 className="font-semibold font-sans text-3xl tracking-tighter">Let's Connect</h1> 
-                      <p className="text-left font-serif font-semibold">Write a message to share it with Yashomati Chandrakant Thakur.</p>
+                      <h1 className="font-semibold font-sans text-3xl tracking-tighter text-white">Let's Connect</h1> 
+                      <p className="text-left font-serif font-semibold text-white">Write a message to share it with Yashomati Chandrakant Thakur.</p>
 
                       <form action="" className="w-full flex flex-col gap-2">
 
                       <div className=" relative flex flex-col items-center justify-center w-full bg-transparent  placeholder-gray-600 bottom-2 gap-1">
-                              <label htmlFor="name"  className="self-start font-sans font-semibold text-sm">Full Name <span className="text-red-600">*</span> :</label>
+                              <label htmlFor="name"  className="self-start font-sans font-semibold text-sm text-white">Full Name <span className="text-red-600">*</span> :</label>
                               <input type="text" id="name"  className="flex-grow w-full mx-auto h-full placeholder-gray-600 bg-white  border-2 border-black focus:outline-none focus:border-gray-400 rounded-md p-2"
                         placeholder="Enter Your Full Name" required />
                       </div>
 
                       <div className=" relative flex flex-col items-center justify-center w-full bg-transparent  placeholder-gray-600 bottom-2 gap-1">
-                              <label htmlFor="mobilenumber"  className="self-start font-sans font-semibold text-sm">Mobile Number<span className="text-red-600">*</span> :</label>
+                              <label htmlFor="mobilenumber"  className="self-start font-sans font-semibold text-sm text-white">Mobile Number<span className="text-red-600"> *</span> :</label>
                               <input type="number" id="mobilenumber"  className="flex-grow w-full mx-auto h-full placeholder-gray-600 bg-white  border-2 border-black focus:outline-none focus:border-gray-400 rounded-md p-2"
                         placeholder="Enter Your Mobile Number" required />
                       </div>
 
                       <div className=" relative flex flex-col items-center justify-center w-full bg-transparent  placeholder-gray-600 bottom-2 gap-1">
-                              <label htmlFor="email"  className="self-start font-sans font-semibold text-sm">Email ID (Optional) :</label>
+                              <label htmlFor="email"  className="self-start font-sans font-semibold text-sm text-white">Email ID (Optional) :</label>
                               <input type="email" id="email"  className="flex-grow w-full mx-auto h-full placeholder-gray-600 bg-white  border-2 border-black focus:outline-none focus:border-gray-400 rounded-md p-2"
                         placeholder="Enter Your Email ID" required />
                       </div>
 
                       <div className=" relative flex flex-col items-center justify-center w-full bg-transparent  placeholder-gray-600 bottom-2 gap-1">
-                              <label htmlFor="messagearea"  className="self-start font-sans font-semibold text-sm">Your Message <span className="text-red-600">*</span></label>
+                              <label htmlFor="messagearea"  className="self-start font-sans font-semibold text-sm text-white">Your Message <span className="text-red-600">*</span></label>
                               <textarea id="messagearea"  className="flex-grow w-full mx-auto h-full placeholder-gray-600 bg-white  border-2 border-black focus:outline-none focus:border-gray-400 rounded-md p-2"
                         placeholder="Your Message" required />
                       </div>
 
-                      <div className="h-10 self-center w-fit rounded-full bg-gradient-to-r from-green-600 via-orange-600 to-orange-500 p-0.5">
-                        <button className="flex h-full w-full items-center justify-center bg-[#fac53b] rounded-full px-10 text-base font-mono font-black tracking-tight hover:cursor-pointer hover:bg-transparent hover:text-white">
+                      <div className="h-12 self-center w-fit rounded-full bg-gradient-to-r from-violet-900 to-blue-600 p-0.5">
+                        <button className="flex h-full w-full items-center justify-center bg-white rounded-full px-10 text-base font-mono font-black tracking-tight hover:cursor-pointer hover:bg-transparent hover:text-white">
                           SUBMIT
                         </button>
                       </div>
@@ -173,7 +176,7 @@ const Home = () => {
             <div className="flex flex-col items-start w-1/3 h-[60%] mt-20 gap-2">
               <div className="flex flex-row items-end">
                   <img src="./icons/call-icon.png" alt="call-icon" className="h-40 w-40" />
-                  <span className="font-semibold text-2xl text-[#fac53b]">Call  On</span>
+                  <span className="font-semibold text-2xl text-blue">Call  On</span>
               </div> 
               <h1 className="text-white font-black text-5xl font-sans">+91 9696330330</h1>   
 
@@ -186,10 +189,110 @@ const Home = () => {
 
          </section>
         
-        <section className="flex flex-col  absolute -mt-16">
+        <section className="flex flex-col  relative -mt-16">
            <img src="./img/focus-area-top.png" className="w-full" alt="profile-header-image" />
+           <div className="flex flex-col items-center bg-[#EAEAEA] gap-2 pb-10">
+              <img src="./img/down.png" alt="down-arrow-profile-header"
+                  className="h-8 w-2"/>
+                <h4 className="text-lg font-semibold">Best moments with public</h4>
+                <h1 className="text-5xl font-bold bg-gradient-to-r from-violet-900 to-blue-600 ... bg-clip-text text-transparent font-sans tracking-tighter">PHOTOS & VIDEOS GALLERY</h1>
+
+                <div className="grid grid-cols-6 gap-3 mt-3 w-[90%]">
+            
+                      <div>
+                        <img src="./img/YT-photos-gallery-1.JPG" alt="" className="object-cover w-full rounded-2xl hover:scale-105 transition duration-500 cursor-pointer" />
+                      </div>
+
+                      <div>
+                        <img src="./img/YT-photos-gallery-2.JPG" alt="" className="object-cover w-full rounded-2xl hover:scale-105 transition duration-500 cursor-pointer" />
+                      </div>
+
+                      <div>
+                        <img src="./img/YT-photos-gallery-3.JPG" alt="" className="object-cover w-full rounded-2xl hover:scale-105 transition duration-500 cursor-pointer" />
+                      </div>
+
+                      <div>
+                        <img src="./img/YT-photos-gallery-4.JPG" alt="" className="object-cover w-full rounded-2xl hover:scale-105 transition duration-500 cursor-pointer" />
+                      </div>
+
+                      <div>
+                        <img src="./img/YT-photos-gallery-5.JPG" alt="" className="object-cover w-full rounded-2xl hover:scale-105 transition duration-500 cursor-pointer" />
+                      </div>
+
+                      <div>
+                        <img src="./img/YT-photos-gallery-6.JPG" alt="" className="object-cover w-full rounded-2xl hover:scale-105 transition duration-500 cursor-pointer" />
+                      </div>
+
+                </div>
+
+                      <div className="h-12 self-center w-fit rounded-full bg-gradient-to-r from-violet-900 to-blue-600 p-0.5 mt-3">
+                              <button className="flex h-full w-full items-center justify-center bg-white rounded-full px-10 text-base font-sans font-semibold tracking-tight hover:cursor-pointer hover:bg-transparent hover:text-white">
+                                See More
+                              </button>
+                      </div>
+            
+            </div>
+
         </section>
 
+          
+        <section className="flex flex-col relative -mt-14">
+           <img src="./img/feed-top.png" className="w-full" alt="profile-header-image" />
+           <div className="flex flex-col items-center justify-center bg-[#EAEAEA] pb-20" style={{ backgroundImage: "url('./img/feed-bg.jpg')", backgroundSize: 'cover', backgroundColor: '#EAEAEA' }}>
+            
+            <div className="grid grid-cols-3 w-[90%]">
+                <div className="shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-2xl w-fit">
+
+                <Timeline
+                  dataSource={{ sourceType: "profile", screenName: "AdvYashomatiINC" }}
+                  options={{ width: "400", height: "500" }}
+                />
+                </div>
+
+                <div className="shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-2xl w-fit">
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAdvYashomatiINC&tabs=timeline%20%2C%20events&width=400&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" 
+                    width="400" 
+                    height="500" 
+                    style={{ border: "none", overflow: "hidden", borderRadius: "1rem" }} 
+                    allowFullScreen={true} 
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                  >
+                  </iframe>
+                </div>
+
+                <div>
+                  <div className="flex flex-col items-center">
+                    <img src="./img/down.png" alt="down-arrow-profile-header"
+                        className="h-8 w-2"/>
+                      <h4 className="text-lg font-semibold">Get Social Media updates</h4>
+                      <h1 className="text-4xl font-bold bg-gradient-to-r from-violet-900 to-blue-600 ... bg-clip-text text-transparent font-sans tracking-tighter text-right">SOCIAL MEDIA LIVE <br/> UPDATES</h1>
+                  </div>
+                </div>
+              
+            </div>
+            
+            </div>
+
+        </section>
+
+        <section className="flex flex-col w-full relative items-center justify-center gap-28 -mt-14" style={{ backgroundImage: "url('./img/news-bg.png')", backgroundSize: 'cover', backgroundColor: '#EAEAEA' }}>
+           
+          <div className="flex flex-col items-center mt-20">
+            <img src="./img/down-white.png" alt="down-arrow-profile-header"
+                className="h-8 w-2"/>
+              <h4 className="text-lg font-semibold text-white">Resources & Latest News</h4>
+              <h1 className="text-5xl font-bold bg-gradient-to-r from-violet-900 to-blue-600 ... bg-clip-text text-transparent font-sans tracking-tighter text-right">NEWS & MEDIA</h1>
+          </div>
+
+          <div className="flex items-center justify-around h-full w-4/5">
+            <img src="./img/old-man.png" alt="down-arrow-profile-header"
+                className="w-1/4"/>
+              <div className=" w-3/5">
+                                 
+              </div>
+          </div>
+
+         </section>
       
     </>
   );
