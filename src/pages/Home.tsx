@@ -176,7 +176,7 @@ const Home = () => {
             <div className="flex flex-col items-start w-1/3 h-[60%] mt-20 gap-2">
               <div className="flex flex-row items-end">
                   <img src="./icons/call-icon.png" alt="call-icon" className="h-40 w-40" />
-                  <span className="font-semibold text-2xl text-blue">Call  On</span>
+                  <span className="font-semibold text-2xl text-[#fac53b]">Call  On</span>
               </div> 
               <h1 className="text-white font-black text-5xl font-sans">+91 9696330330</h1>   
 
