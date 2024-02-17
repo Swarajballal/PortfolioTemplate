@@ -1,10 +1,15 @@
 import FocusAreaItem from "@/components/FocusArea/FocusAreaItems";
 import EmblaCarousel from "@/components/carousel/EmblaCarousel";
 import NavBar from "@/components/navbar/NavBar";
+import NewsCarousel from "@/components/newsCarousel/NewsCarousel";
 import { EmblaOptionsType } from 'embla-carousel'
 import { useState } from "react";
 import React from "react"
 import { Timeline } from 'react-twitter-widgets'
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 
 const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true }
 const SLIDE_COUNT = 2
@@ -32,7 +37,7 @@ const Home = () => {
       {/* <---- Profile Header ----> */}
 
       <section className="flex flex-col">
-        <div className="w-[90%] h-screen flex mx-auto">
+        <div className="w-[90%] flex mx-auto">
             <div className="flex flex-col w-1/2 items-start justify-center">
                 <img src="./img/down.png" alt="down-arrow-profile-header"
                  className="h-8 w-2 ml-32"/>
@@ -189,9 +194,9 @@ const Home = () => {
 
          </section>
         
-        <section className="flex flex-col  relative -mt-16">
+        <section className="flex flex-col  relative -mt-24">
            <img src="./img/focus-area-top.png" className="w-full" alt="profile-header-image" />
-           <div className="flex flex-col items-center bg-[#EAEAEA] gap-2 pb-10">
+           <div className="flex flex-col items-center bg-[#EAEAEA] gap-2 pb-24">
               <img src="./img/down.png" alt="down-arrow-profile-header"
                   className="h-8 w-2"/>
                 <h4 className="text-lg font-semibold">Best moments with public</h4>
@@ -236,7 +241,7 @@ const Home = () => {
         </section>
 
           
-        <section className="flex flex-col relative -mt-14">
+        <section className="flex flex-col relative -mt-24 pb-10">
            <img src="./img/feed-top.png" className="w-full" alt="profile-header-image" />
            <div className="flex flex-col items-center justify-center bg-[#EAEAEA] pb-20" style={{ backgroundImage: "url('./img/feed-bg.jpg')", backgroundSize: 'cover', backgroundColor: '#EAEAEA' }}>
             
@@ -275,24 +280,72 @@ const Home = () => {
 
         </section>
 
-        <section className="flex flex-col w-full relative items-center justify-center gap-28 -mt-14" style={{ backgroundImage: "url('./img/news-bg.png')", backgroundSize: 'cover', backgroundColor: '#EAEAEA' }}>
+        <section className="flex flex-col w-full relative items-center justify-center gap-14 -mt-24" style={{ backgroundImage: "url('./img/news-bg.png')", backgroundSize: 'cover', backgroundColor: '#D5D5D5' }}>
            
-          <div className="flex flex-col items-center mt-20">
+          <div className="flex flex-col items-center mt-24">
             <img src="./img/down-white.png" alt="down-arrow-profile-header"
                 className="h-8 w-2"/>
               <h4 className="text-lg font-semibold text-white">Resources & Latest News</h4>
-              <h1 className="text-5xl font-bold bg-gradient-to-r from-violet-900 to-blue-600 ... bg-clip-text text-transparent font-sans tracking-tighter text-right">NEWS & MEDIA</h1>
+              <h1 className="text-5xl font-bold bg-gradient-to-r from-violet-400 to-blue-600 ... bg-clip-text text-transparent font-sans tracking-tighter text-right">NEWS & MEDIA</h1>
           </div>
 
-          <div className="flex items-center justify-around h-full w-4/5">
+          <div className="flex items-center justify-around w-[80%] ">
             <img src="./img/old-man.png" alt="down-arrow-profile-header"
                 className="w-1/4"/>
-              <div className=" w-3/5">
-                                 
+              <div className="w-2/3">
+                     <NewsCarousel />            
               </div>
           </div>
 
+          <img src="./img/footer-top.png" alt="" className="w-full"/>
          </section>
+
+          {/* <---- Footer ----> */}
+
+        <section className="flex relative justify-around bg-[#353535] pb-5">
+            <div className="w-[80%] flex justify-between">
+
+            <div className="flex flex-col gap-2 text-start">
+
+                <h2 className="text-lg text-white font-bold font-sans tracking-tighter">FOLLOW MLA YASHOMATI CHANDRAKANT THAKUR FOR LIVE UPDATES</h2>
+
+                <ul className="flex gap-4 text-3xl text-white">
+                  <li>
+                    <FaInstagram  />
+                  </li>
+
+                  <li>
+                    <FaFacebook />
+                  </li>
+
+                  <li>
+                    <FaSquareXTwitter />
+                  </li>
+                  
+                  <li>
+                    <FaLinkedin />
+                  </li>
+
+                </ul>
+
+                <h3 className="text-sm text-white font-sans">© 2024. All rights reserved</h3>
+
+            </div>
+
+                  <div className="flex flex-col gap-2 text-start -mt-10">
+                      <p className="font-sans tracking-tighter text-base text-white">Srujan House, In front of Teri Tree Hotel,<br/>
+                         Bhosale Nagar, Shivaji Road,<br/>
+                         Magarpatta, Hadapsar - 411028 <br/>
+                      </p>
+
+                      <h2 className="text-lg text-white font-bold font-sans tracking-tighter">+91 969 633 0330</h2>
+
+                      <h3 className="text-lg font-bold bg-gradient-to-r from-violet-400 to-blue-600 ... bg-clip-text text-transparent font-sans">rrp@rohitpawar.org</h3>
+
+                  </div> 
+
+            </div>
+        </section>
       
     </>
   );
