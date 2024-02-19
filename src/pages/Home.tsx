@@ -10,6 +10,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import FocusAreaContent from "@/components/FocusArea/FocusAreaContent";
 
 const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true }
 const SLIDE_COUNT = 2
@@ -43,10 +44,10 @@ const Home = () => {
                  className="h-8 w-2 ml-32"/>
                 <h4 className="text-lg font-semibold">About the Personality</h4>
                 <h1 className="text-4xl font-black bg-gradient-to-r from-violet-900 to-blue-600 ... bg-clip-text text-transparent">Yashomati Chandrakant Thakur</h1>
-                <h4 className="font-semibold mt-1">MLA (Member of Legislative Assembly, Karjat – Jamkhed)</h4>
+                <h4 className="font-semibold mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
 
                 <p className="text-start mt-6">
-                  Rohit Rajendra Pawar is hailed as the young face of Maharashtra Politics. He envisions building a better Maharashtra where everyone has a fair chance to succeed. As the CEO of Baramati Agro Pvt Ltd, he has made a remarkable contribution to the Agriculture Industry. He has successfully held the position as the Youngest President of ISMA in 2018-2019. He started his political career as the Pune Zilla Parishad Member from Shrisufal in Baramati Taluka in 2017. He is carrying forward his family legacy set by his grandfather- Padmashree Shri. Appasaheb Pawar, NCP chief Shri. Sharad Pawar and parents Rajendra Pawar and Sunandatai Pawar ensuring enhanced growth and sustainable development in the socio-political spectrum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin vel nisl auctor, blandit lacus id, aliquet lorem. Nullam non risus at sapien cursus aliquet. Sed auctor, justo in dignissim cursus, quam mauris varius sem, et aliquet neque lorem nec nunc. Mauris non ligula suscipit, volutpat mauris id, consequat mauris. Integer in tellus non mauris mollis aliquam. Curabitur a nunc non lectus fringilla bibendum vitae sed turpis. Cras aliquet, sem a lobortis pellentesque, quam lorem feugiat sem, ac condimentum ligula ipsum a dolor Integer in tellus non mauris mollis aliquam. Curabitur a nunc non lectus fringilla bibendum vitae sed turpis.
                 </p>
 
                 
@@ -80,58 +81,73 @@ const Home = () => {
             <div className="w-[90%] mx-auto mt-10">
               <div className="grid grid-cols-8 gap-9">
                  
-              {FocusAreaItems.map((item) => (
-                        <React.Fragment key={item}>
-                            <FocusAreaItem
-                                label={item}
-                                active={active == item}
-                                onClick={() => {
-                                    setActive(item);
-                                    switch(item) {
-                                        case 'Youth':
-                                            break;
-                                        case 'Women':
-                                            break;
-                                        case 'Farmer':
-                                            break;
-                                        case '  ':
-                                            break;  
-                                        case 'HealthCare':
-                                            break;
-                                        case 'Good Governance':
-                                            break;
-                                        case 'Economy':
-                                            break;
-                                        case 'Water':
-                                          break;  
-                                        default:
-                                            break;       
-                                        }
-                                    }}
-                                />
+                {FocusAreaItems.map((item) => (
+                    <React.Fragment key={item}>
+                        <FocusAreaItem
+                            label={item}
+                            active={active == item}
+                            onClick={() => {
+                                setActive(item);
+                                switch(item) {
+                                    case 'Youth':
+                                        break;
+                                    case 'Women':
+                                        break;
+                                    case 'Farmer':
+                                        break;
+                                    case '  ':
+                                        break;  
+                                    case 'HealthCare':
+                                        break;
+                                    case 'Good Governance':
+                                        break;
+                                    case 'Economy':
+                                        break;
+                                    case 'Water':
+                                      break;  
+                                    default:
+                                        break;       
+                                    }
+                                }}
+                          />
                         </React.Fragment>
                     ))}
 
               </div>
             </div>
 
-            <div className="w-4/5 flex mx-auto gap-10 justify-center items-center mt-14">
-            <div className="w-2/5]">
-                <img src="./img/YT focus-section-youth.png" className="w-full" alt="profile-header-image" />
-            </div>
-
-            <div className="flex flex-col w-3/5 items-start justify-center">
-                <p className="text-start mt-6">
-                  Rohit Rajendra Pawar is hailed as the young face of Maharashtra Politics. He envisions building a better Maharashtra where everyone has a fair chance to succeed. As the CEO of Baramati Agro Pvt Ltd, he has made a remarkable contribution to the Agriculture Industry. He has successfully held the position as the Youngest President of ISMA in 2018-2019. He started his political career as the Pune Zilla Parishad Member from Shrisufal in Baramati Taluka in 2017. He is carrying forward his family legacy set by his grandfather- Padmashree Shri. Appasaheb Pawar, NCP chief Shri. Sharad Pawar and parents Rajendra Pawar and Sunandatai Pawar ensuring enhanced growth and sustainable development in the socio-political spectrum.
-                </p>
-
-                
-                  <div className="h-10 mt-4 w-fit rounded-full bg-gradient-to-r from-violet-900 to-blue-600 p-0.5">
-                    <button className="flex h-full w-full items-center justify-center bg-white rounded-full px-10 text-base font-mono font-black tracking-tight hover:cursor-pointer hover:bg-transparent hover:text-white">
-                       READ MORE
-                    </button>
-                  </div>
-            </div>
+          <div className="w-4/5 flex mx-auto gap-10 justify-center items-center mt-14">
+              {FocusAreaItems.map((item) => (
+                    <React.Fragment key={item}>
+                        <FocusAreaContent
+                            label={item}
+                            active={active == item}
+                            onClick={() => {
+                                setActive(item);
+                                switch(item) {
+                                    case 'Youth':
+                                        break;
+                                    case 'Women':
+                                        break;
+                                    case 'Farmer':
+                                        break;
+                                    case '  ':
+                                        break;  
+                                    case 'HealthCare':
+                                        break;
+                                    case 'Good Governance':
+                                        break;
+                                    case 'Economy':
+                                        break;
+                                    case 'Water':
+                                      break;  
+                                    default:
+                                        break;       
+                                    }
+                                }}
+                            />
+                    </React.Fragment>
+                ))}
           </div>
 
          </section>
@@ -183,7 +199,7 @@ const Home = () => {
                   <img src="./icons/call-icon.png" alt="call-icon" className="h-40 w-40" />
                   <span className="font-semibold text-2xl text-[#fac53b]">Call  On</span>
               </div> 
-              <h1 className="text-white font-black text-5xl font-sans">+91 9696330330</h1>   
+              <h1 className="text-white font-black text-5xl font-sans">+91 12345678</h1>   
 
               <p className="text-[#fac53b] font-semibold text-3xl font-sans tracking-tighter">
                 to directly connect with the
@@ -333,14 +349,14 @@ const Home = () => {
             </div>
 
                   <div className="flex flex-col gap-2 text-start -mt-10">
-                      <p className="font-sans tracking-tighter text-base text-white">Srujan House, In front of Teri Tree Hotel,<br/>
-                         Bhosale Nagar, Shivaji Road,<br/>
-                         Magarpatta, Hadapsar - 411028 <br/>
+                      <p className="font-sans tracking-tighter text-base text-white">Lorem ipsum dolor sit amet,<br/>
+                      Lorem ipsum dolor sit amet<br/>
+                      Lorem ipsum dolor sit amet <br/>
                       </p>
 
-                      <h2 className="text-lg text-white font-bold font-sans tracking-tighter">+91 969 633 0330</h2>
+                      <h2 className="text-lg text-white font-bold font-sans tracking-tighter">+91 12345678</h2>
 
-                      <h3 className="text-lg font-bold bg-gradient-to-r from-violet-400 to-blue-600 ... bg-clip-text text-transparent font-sans">rrp@rohitpawar.org</h3>
+                      <h3 className="text-lg font-bold bg-gradient-to-r from-violet-400 to-blue-600 ... bg-clip-text text-transparent font-sans">email@xyz.com</h3>
 
                   </div> 
 
