@@ -17,7 +17,7 @@ const NavBar = () => {
 
 
   return (
-        <nav className="w-[90%] z-10 md:p-8 xl:mt-10 bg-white rounded-full shadow-[rgba(0,_0,_0,_0.4)_20px_20px_20px_10px] relative mx-auto">
+        <nav className="w-[90%] z-10 md:p-8 xl:mt-10 bg-white rounded-full shadow-[rgba(0,_0,_0,_0.4)_20px_20px_20px_10px] absolute mx-auto">
             <div className="flex flex-row items-center justify-center relative">
                 <div className="flex-row gap-2 hidden lg:flex absolute">
                     {menuItems.map((item, index) => (
@@ -29,6 +29,7 @@ const NavBar = () => {
                                     setActive(item);
                                     switch(item) {
                                         case 'HOME':
+                                            navigate('/');
                                             break;
                                         case 'NEWS&MEDIA':
                                             break;

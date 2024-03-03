@@ -6,18 +6,16 @@ import { EmblaOptionsType } from 'embla-carousel'
 import { useState } from "react";
 import React from "react"
 import { Timeline } from 'react-twitter-widgets'
-import { FaInstagram } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
 import FocusAreaContent from "@/components/FocusArea/FocusAreaContent";
+import { useNavigate } from "react-router-dom";
+import Footer from "@/components/footer/Footer";
 
 const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true }
 const SLIDE_COUNT = 2
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 const Home = () => {
-
+  const navigate = useNavigate();
   const [active, setActive] = useState('Youth');
   const FocusAreaItems = ['Youth', 'Women', 'Farmer', 'Education', 'HealthCare', 'Good Governance', 'Economy', 'Water'];
 
@@ -52,7 +50,9 @@ const Home = () => {
 
                 
                 <div className="h-10 mt-4 w-fit rounded-full bg-gradient-to-r from-violet-900 to-blue-600 p-0.5">
-                    <button className="flex h-full w-full items-center justify-center bg-white rounded-full px-10 text-base font-mono font-black tracking-tight hover:cursor-pointer hover:bg-transparent hover:text-white">
+                    <button onClick={() => {
+                      navigate('/about');
+                    }} className="flex h-full w-full items-center justify-center bg-white rounded-full px-10 text-base font-mono font-black tracking-tight hover:cursor-pointer hover:bg-transparent hover:text-white">
                        READ MORE
                     </button>
                   </div>
@@ -95,7 +95,7 @@ const Home = () => {
                                         break;
                                     case 'Farmer':
                                         break;
-                                    case '  ':
+                                    case 'Education':
                                         break;  
                                     case 'HealthCare':
                                         break;
@@ -126,22 +126,31 @@ const Home = () => {
                                 setActive(item);
                                 switch(item) {
                                     case 'Youth':
+                                        navigate('/focus-area')
                                         break;
                                     case 'Women':
+                                        navigate('/focus-area')
                                         break;
                                     case 'Farmer':
+                                        navigate('/focus-area')
                                         break;
-                                    case '  ':
+                                    case 'Education':
+                                        navigate('/focus-area')
                                         break;  
                                     case 'HealthCare':
+                                        navigate('/focus-area')
                                         break;
                                     case 'Good Governance':
+                                        navigate('/focus-area')
                                         break;
                                     case 'Economy':
+                                        navigate('/focus-area')
                                         break;
                                     case 'Water':
+                                        navigate('/focus-area')
                                       break;  
                                     default:
+                                        navigate('/')
                                         break;       
                                     }
                                 }}
@@ -318,50 +327,7 @@ const Home = () => {
 
           {/* <---- Footer ----> */}
 
-        <section className="flex relative justify-around bg-[#353535] pb-5">
-            <div className="w-[80%] flex justify-between">
-
-            <div className="flex flex-col gap-2 text-start">
-
-                <h2 className="text-lg text-white font-bold font-sans tracking-tighter">FOLLOW MLA YASHOMATI CHANDRAKANT THAKUR FOR LIVE UPDATES</h2>
-
-                <ul className="flex gap-4 text-3xl text-white">
-                  <li>
-                    <FaInstagram  />
-                  </li>
-
-                  <li>
-                    <FaFacebook />
-                  </li>
-
-                  <li>
-                    <FaSquareXTwitter />
-                  </li>
-                  
-                  <li>
-                    <FaLinkedin />
-                  </li>
-
-                </ul>
-
-                <h3 className="text-sm text-white font-sans">© 2024. All rights reserved</h3>
-
-            </div>
-
-                  <div className="flex flex-col gap-2 text-start -mt-10">
-                      <p className="font-sans tracking-tighter text-base text-white">Lorem ipsum dolor sit amet,<br/>
-                      Lorem ipsum dolor sit amet<br/>
-                      Lorem ipsum dolor sit amet <br/>
-                      </p>
-
-                      <h2 className="text-lg text-white font-bold font-sans tracking-tighter">+91 12345678</h2>
-
-                      <h3 className="text-lg font-bold bg-gradient-to-r from-violet-400 to-blue-600 ... bg-clip-text text-transparent font-sans">email@xyz.com</h3>
-
-                  </div> 
-
-            </div>
-        </section>
+           <Footer />
       
     </>
   );
