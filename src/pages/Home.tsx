@@ -74,7 +74,7 @@ const Home = () => {
             <div className="flex flex-col items-center">
               <img src="./img/down.png" alt="down-arrow-profile-header"
                   className="h-8 w-2"/>
-                <h4 className="text-lg font-semibold">Let's Work Together</h4>
+                <h4 className="text-lg font-semibold">Let's Work Together</h4>  
                 <h1 className="text-5xl font-bold bg-gradient-to-r from-violet-900 to-blue-600 ... bg-clip-text text-transparent font-sans">FOCUS AREAS</h1>
             </div>
 
@@ -219,7 +219,7 @@ const Home = () => {
 
          </section>
         
-        <section className="flex flex-col  relative -mt-24">
+        <section id="GALLERY" className="flex flex-col  relative -mt-24">
            <img src="./img/focus-area-top.png" className="w-full" alt="profile-header-image" />
            <div className="flex flex-col items-center bg-[#EAEAEA] gap-2 pb-24">
               <img src="./img/down.png" alt="down-arrow-profile-header"
@@ -305,7 +305,7 @@ const Home = () => {
 
         </section>
 
-        <section className="flex flex-col w-full relative items-center justify-center gap-14 -mt-24" style={{ backgroundImage: "url('./img/news-bg.png')", backgroundSize: 'cover', backgroundColor: '#D5D5D5' }}>
+        <section id="NEWS&MEDIA" className="flex flex-col w-full relative items-center justify-center gap-14 -mt-24" style={{ backgroundImage: "url('./img/news-bg.png')", backgroundSize: 'cover', backgroundColor: '#D5D5D5' }}>
            
           <div className="flex flex-col items-center mt-24">
             <img src="./img/down-white.png" alt="down-arrow-profile-header"

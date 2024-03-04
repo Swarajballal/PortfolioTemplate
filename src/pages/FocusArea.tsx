@@ -38,7 +38,7 @@ const FocusArea = () => {
 
         <div className='flex w-[90%] mt-40 mx-auto'>
             <div className="w-1/2 flex">
-                <img src="./img/main-focus-area-img.png" className="w-3/5 z-50" alt="profile-header" />
+                <img src="./img/Yashomati Thakur HD.png" className="w-3/5 z-50" alt="profile-header" />
                 <img src={images[active]} className="w-1/4 absolute opacity-50 left-[18%]" alt="background-header" />
             </div>
 

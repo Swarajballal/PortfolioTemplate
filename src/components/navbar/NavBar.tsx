@@ -1,7 +1,7 @@
 import {useState } from "react";
 // import { useCallback } from "react";
 import NavbarItem from "./NavbarItem";
-import React from "react";
+import React from "react";  
 import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
@@ -25,6 +25,7 @@ const NavBar = () => {
                             <NavbarItem
                                 label={item}
                                 active={active == item}
+                                to={item}
                                 onClick={() => {
                                     setActive(item);
                                     switch(item) {
@@ -32,14 +33,18 @@ const NavBar = () => {
                                             navigate('/');
                                             break;
                                         case 'NEWS&MEDIA':
+                                            navigate('/');
                                             break;
                                         case 'BLOGS':
                                             break;
                                         case 'GALLERY':
+                                            navigate('/gallery');
                                             break;  
                                         case 'FOCUS AREAS':
+                                            navigate('/focus-area');
                                             break;
                                         case 'INITIATIVES':
+                                            navigate('/initiative');
                                             break;
                                         case 'ASSEMBLY':
                                             break; 
