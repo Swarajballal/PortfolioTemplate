@@ -22,6 +22,7 @@ const NavBar = () => {
             <div className="flex flex-row items-center justify-center relative">
                 
                 <div className="flex-row gap-2 hidden lg:flex absolute">
+                    
                     {menuItems.map((item, index) => (
                         <React.Fragment key={item}>
                             <NavbarItem
