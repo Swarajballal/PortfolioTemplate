@@ -9,6 +9,7 @@ import { Timeline } from 'react-twitter-widgets'
 import FocusAreaContent from "@/components/FocusArea/FocusAreaContent";
 import { useNavigate } from "react-router-dom";
 import Footer from "@/components/footer/Footer";
+import Gallery from "@/components/gallery/Gallery";
 
 const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true }
 const SLIDE_COUNT = 2
@@ -226,41 +227,7 @@ const Home = () => {
                   className="h-8 w-2"/>
                 <h4 className="text-lg font-semibold">Best moments with public</h4>
                 <h1 className="text-5xl font-bold bg-gradient-to-r from-violet-900 to-blue-600 ... bg-clip-text text-transparent font-sans tracking-tighter">PHOTOS & VIDEOS GALLERY</h1>
-
-                <div className="grid grid-cols-6 gap-3 mt-3 w-[90%]">
-            
-                      <div>
-                        <img src="./img/YT-photos-gallery-1.JPG" alt="" className="object-cover w-full rounded-2xl hover:scale-105 transition duration-500 cursor-pointer" />
-                      </div>
-
-                      <div>
-                        <img src="./img/YT-photos-gallery-2.JPG" alt="" className="object-cover w-full rounded-2xl hover:scale-105 transition duration-500 cursor-pointer" />
-                      </div>
-
-                      <div>
-                        <img src="./img/YT-photos-gallery-3.JPG" alt="" className="object-cover w-full rounded-2xl hover:scale-105 transition duration-500 cursor-pointer" />
-                      </div>
-
-                      <div>
-                        <img src="./img/YT-photos-gallery-4.JPG" alt="" className="object-cover w-full rounded-2xl hover:scale-105 transition duration-500 cursor-pointer" />
-                      </div>
-
-                      <div>
-                        <img src="./img/YT-photos-gallery-5.JPG" alt="" className="object-cover w-full rounded-2xl hover:scale-105 transition duration-500 cursor-pointer" />
-                      </div>
-
-                      <div>
-                        <img src="./img/YT-photos-gallery-6.JPG" alt="" className="object-cover w-full rounded-2xl hover:scale-105 transition duration-500 cursor-pointer" />
-                      </div>
-
-                </div>
-
-                      <div className="h-12 self-center w-fit rounded-full bg-gradient-to-r from-violet-900 to-blue-600 p-0.5 mt-3">
-                              <button className="flex h-full w-full items-center justify-center bg-white rounded-full px-10 text-base font-sans font-semibold tracking-tight hover:cursor-pointer hover:bg-transparent hover:text-white">
-                                See More
-                              </button>
-                      </div>
-            
+                <Gallery />
             </div>
 
         </section>
