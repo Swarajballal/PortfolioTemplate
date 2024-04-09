@@ -162,6 +162,8 @@ const Home = () => {
 
          </section>
 
+         {/* <---- Focus area bg ----> */}
+         
          <section className="flex w-full relative items-center justify-center gap-28" style={{ backgroundImage: "url('./img/YT-Form-Bg.png')", backgroundSize: 'cover', backgroundColor: '#EAEAEA' }}>
             <div className="bg-blue-950 w-4/12 h-min pb-16 rounded-3xl mt-32">
                   <div className="h-full w-[90%] mx-auto mt-10 flex flex-col items-start gap-4">
