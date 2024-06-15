@@ -16,7 +16,6 @@ const FocusArea = () => {
   const [active, setActive] = useState('Youth');
   const FocusAreaItems = ['Youth', 'Women', 'Farmer', 'Education', 'HealthCare', 'Good Governance', 'Economy', 'Water'];
 
-
   const images: { [key: string]: string } = {
     'Youth': youthfocusareaimg,
     'Women': womenfocusareaimg,
@@ -52,78 +51,23 @@ const FocusArea = () => {
       </section>
 
       <section>
-      <div className="w-[90%] mx-auto mt-10">
-        
-              <div className="grid grid-cols-8 gap-9"> 
-                {FocusAreaItems.map((item) => (
-                    <React.Fragment key={item}>
-                        <FocusAreaItem
-                            label={item}
-                            active={active == item}
-                            onClick={() => {
-                                setActive(item);
-                                switch(item) {
-                                    case 'Youth':
-                                        break;
-                                    case 'Women':
-                                        break;
-                                    case 'Farmer':
-                                        break;
-                                    case 'Education':
-                                        break;  
-                                    case 'HealthCare':
-                                        break;
-                                    case 'Good Governance':
-                                        break;
-                                    case 'Economy':
-                                        break;
-                                    case 'Water':
-                                      break;  
-                                    default:
-                                        break;       
-                                    }
-                                }}
-                          />
-                        </React.Fragment>
-                    ))}
-              </div>
+        <div className="w-[90%] mx-auto mt-10">
+          <div className="grid grid-cols-8 gap-9"> 
+            {FocusAreaItems.map((item) => (
+              <React.Fragment key={item}>
+                <FocusAreaItem
+                  label={item}
+                  active={active === item}
+                  onClick={() => setActive(item)}
+                />
+              </React.Fragment>
+            ))}
+          </div>
 
-              {FocusAreaItems.map((item) => (
-                    <React.Fragment key={item}>
-                        <MainFocusArea
-                            label={item}
-                            active={active == item}
-                            onClick={() => {
-                                setActive(item);
-                                switch(item) {
-                                    case 'Youth':
-                                        break;
-                                    case 'Women':
-                                        break;
-                                    case 'Farmer':
-                                        break;
-                                    case 'Education':
-                                        break;  
-                                    case 'HealthCare':
-                                        break;
-                                    case 'Good Governance':
-                                        break;
-                                    case 'Economy':
-                                        break;
-                                    case 'Water':
-                                      break;  
-                                    default:
-                                        break;       
-                                    }
-                                }}
-                            />
-                    </React.Fragment>
-                ))}
+          <MainFocusArea label={active} showImage={false} />
+        </div>
 
-            </div>
-
-            <img src="./img/footer-top.png" alt="" className="w-full"/>
-
+        <img src="./img/footer-top.png" alt="" className="w-full"/>
       </section>
 
       <Footer />
