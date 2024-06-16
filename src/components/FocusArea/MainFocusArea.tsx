@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Spinner from '../ui/Spinner';
-import youthfocusareaimg from '../../../public/img/YT focus-section-youth.png';
-import womenfocusareaimg from '../../../public/img/YT  focus-section-women.png';
-import farmerfocusareaimg from '../../../public/img/YT  focus-section-farmers.png';
-import educationfocusareaimg from '../../../public/img/YT focus-section-education.png';
-import healthfocusareaimg from '../../../public/img/YT focus-section-Health.png';
-import governmentfocusareaimg from '../../../public/img/YT focus-section-good-governance.png';
-import economyfocusareaimg from '../../../public/img/YT focus-section-economy.png';
-import waterfocusareaimg from '../../../public/img/YT  focus-section-water.png';
+import youthfocusareaimg from '../../../public/img/Youth.webp';
+import womenfocusareaimg from '../../../public/img/Women.webp';
+import farmerfocusareaimg from '../../../public/img/Farmers.webp';
+import educationfocusareaimg from '../../../public/img/Education.webp';
+import healthfocusareaimg from '../../../public/img/Health.webp';
+import governmentfocusareaimg from '../../../public/img/GoodGovernance.webp';
+import economyfocusareaimg from '../../../public/img/Economy.webp';
+import waterfocusareaimg from '../../../public/img/Water.webp';
 import { useNavigate } from "react-router-dom";
 
 interface MainFocusAreaProps {

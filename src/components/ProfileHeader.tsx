@@ -25,7 +25,7 @@ const ProfileHeader: React.FC = () => {
           </div>
         </div>
         <div className="w-full md:w-1/2">
-          <img src="/img/about-video.png" className="w-full" alt="profile-header-image" />
+          <img src="/img/about-video.webp" className="w-full" alt="profile-header-image" />
         </div>
       </div>
       <img src="/img/focus-area-top.png" className="w-full" alt="profile-header-image" />

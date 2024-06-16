@@ -27,7 +27,7 @@ const ConnectSection = () => {
   };
 
   return (
-    <section className="flex flex-col md:flex-row w-full p-6 md:p-0 relative items-center justify-center gap-10 md:gap-28" style={{ backgroundImage: "url('/img/YT-Form-Bg.png')", backgroundSize: 'cover', backgroundColor: '#EAEAEA' }}>
+    <section className="flex flex-col md:flex-row w-full p-6 md:p-0 relative items-center justify-center gap-10 md:gap-28" style={{ backgroundImage: "url('/img/Email_Form.webp')", backgroundSize: 'cover', backgroundColor: '#EAEAEA' }}>
       <div className="bg-blue-950 w-full md:w-4/12 h-min pb-8 md:pb-16 rounded-3xl mt-32">
         <div className="h-full w-[90%] mx-auto mt-10 flex flex-col items-start gap-4">
           <h1 className="font-semibold font-sans text-3xl tracking-tighter text-white">Let's Connect</h1>

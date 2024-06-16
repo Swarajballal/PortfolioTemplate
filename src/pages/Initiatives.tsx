@@ -11,7 +11,7 @@ const Initiatives = () => {
                 </div>
 
                 <div className='flex flex-col md:flex-row w-[90%] mt-10 md:mt-32 mx-auto pb-14 md:pb-0'>
-                    <img src="./img/Yashomati Thakur HD.png" className="w-[80%] md:w-[30%] mx-auto md:mx-0" alt="profile-header" />
+                    <img src="./img/Yashomati Thakur HD.webp" className="w-[80%] md:w-[30%] mx-auto md:mx-0" alt="profile-header" />
 
                     <div className='m-auto text-center md:text-start mt-4 md:mt-0'>
                         <h1 className="text-3xl md:text-5xl font-black bg-gradient-to-r from-violet-900 to-blue-600 bg-clip-text text-transparent">Initiatives</h1>

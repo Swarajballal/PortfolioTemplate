@@ -31,7 +31,7 @@ const HomeFocusArea = () => {
   };
 
   return (
-    <section className="homepage-focusarea p-6 md:p-0 flex flex-col w-full" style={{ backgroundImage: "url('./img/focus-area-bg.png')", backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundColor: '#EAEAEA' }}>
+    <section className="homepage-focusarea p-6 md:p-0 flex flex-col w-full" style={{ backgroundImage: "url('./img/FocusArea_Background.webp')", backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundColor: '#EAEAEA' }}>
       <div className="flex flex-col items-center">
         <img src="./img/down.png" alt="down-arrow-profile-header" className="h-8 w-2" />
         <h4 className="text-lg font-semibold">Let's Work Together</h4>

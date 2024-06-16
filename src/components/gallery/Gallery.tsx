@@ -7,28 +7,28 @@ import '../../App.css';
 const Gallery: React.FC = () => {
   const [images, setImages] = useState([
     {
-      original: './img/YT-photos-gallery-1.JPG',
-      thumbnail: './img/YT-photos-gallery-1.JPG',
+      original: './img/1.webp',
+      thumbnail: './img/1.webp',
     },
     {
-      original: './img/YT-photos-gallery-2.JPG',
-      thumbnail: './img/YT-photos-gallery-2.JPG',
+      original: './img/2.webp',
+      thumbnail: './img/2.webp',
     },
     {
-      original: './img/YT-photos-gallery-3.JPG',
-      thumbnail: './img/YT-photos-gallery-3.JPG',
+      original: './img/3.webp',
+      thumbnail: './img/3.webp',
     },
     {
-      original: './img/YT-photos-gallery-4.JPG',
-      thumbnail: './img/YT-photos-gallery-4.JPG',
+      original: './img/4.webp',
+      thumbnail: './img/4.webp',
     },
     {
-      original: './img/YT-photos-gallery-5.JPG',
-      thumbnail: './img/YT-photos-gallery-5.JPG',
+      original: './img/5.webp',
+      thumbnail: './img/5.webp',
     },
     {
-      original: './img/YT-photos-gallery-6.JPG',
-      thumbnail: './img/YT-photos-gallery-6.JPG',
+      original: './img/6.webp',
+      thumbnail: './img/6.webp',
     },
   ]);
 
@@ -42,28 +42,52 @@ const Gallery: React.FC = () => {
     setTimeout(() => {
       const newImages = [
         {
-          original: './img/YT-photos-gallery-1.JPG',
-          thumbnail: './img/YT-photos-gallery-1.JPG',
+          original: './img/7.webp',
+          thumbnail: './img/7.webp',
         },
         {
-          original: './img/YT-photos-gallery-2.JPG',
-          thumbnail: './img/YT-photos-gallery-2.JPG',
+          original: './img/8.webp',
+          thumbnail: './img/8.webp',
         },
         {
-          original: './img/YT-photos-gallery-3.JPG',
-          thumbnail: './img/YT-photos-gallery-3.JPG',
+          original: './img/9.webp',
+          thumbnail: './img/9.webp',
         },
         {
-          original: './img/YT-photos-gallery-4.JPG',
-          thumbnail: './img/YT-photos-gallery-4.JPG',
+          original: './img/10.webp',
+          thumbnail: './img/10.webp',
         },
         {
-          original: './img/YT-photos-gallery-5.JPG',
-          thumbnail: './img/YT-photos-gallery-5.JPG',
+          original: './img/11.webp',
+          thumbnail: './img/11.webp',
         },
         {
-          original: './img/YT-photos-gallery-6.JPG',
-          thumbnail: './img/YT-photos-gallery-6.JPG',
+          original: './img/12.webp',
+          thumbnail: './img/12.webp',
+        },
+        {
+          original: './img/13.webp',
+          thumbnail: './img/13.webp',
+        },
+        {
+          original: './img/14.webp',
+          thumbnail: './img/14.webp',
+        },
+        {
+          original: './img/15.webp',
+          thumbnail: './img/15.webp',
+        },
+        {
+          original: './img/16.webp',
+          thumbnail: './img/16.webp',
+        },
+        {
+          original: './img/17.webp',
+          thumbnail: './img/17.webp',
+        },
+        {
+          original: './img/18.webp',
+          thumbnail: './img/18.webp',
         },
       ];
       setImages([...images, ...newImages]);

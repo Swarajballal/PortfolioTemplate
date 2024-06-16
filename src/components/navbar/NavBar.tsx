@@ -37,7 +37,7 @@ const NavBar = () => {
                         <React.Fragment key={item.label}>
                             {index === 3 && (
                                 <img
-                                    src="./img/header-logo.png"
+                                    src="./img/header-logo.webp"
                                     loading='lazy'
                                     className="w-32 h-32 cursor-pointer absolute transform -translate-y-1/2"
                                     alt="homepage_logo"

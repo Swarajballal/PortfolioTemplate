@@ -5,7 +5,7 @@ const SocialMediaUpdates: React.FC = () => {
   return (
     <section className="flex flex-col relative -mt-24 pb-10">
       <img src="./img/feed-top.png" className="w-full" alt="profile-header-image" />
-      <div className="flex flex-col items-center justify-center bg-[#EAEAEA] p-6 md:p-0 md:pb-20" style={{ backgroundImage: "url('./img/feed-bg.jpg')", backgroundSize: 'cover', backgroundColor: '#EAEAEA' }}>
+      <div className="flex flex-col items-center justify-center bg-[#EAEAEA] p-6 md:p-0 md:pb-20" style={{ backgroundImage: "url('./img/Feed_Background.webp')", backgroundSize: 'cover', backgroundColor: '#EAEAEA' }}>
         <div className="flex flex-col-reverse md:grid md:grid-cols-3 w-full md:w-[90%] gap-4">
           <div className="shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-2xl w-full md:w-fit">
             <Timeline

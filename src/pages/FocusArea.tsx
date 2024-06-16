@@ -8,14 +8,14 @@ import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
 import { Autoplay, Pagination } from 'swiper/modules';
 
-import youthfocusareaimg from "../../public/img/YT focus-section-youth.png";
-import womenfocusareaimg from "../../public/img/YT  focus-section-women.png";
-import farmerfocusareaimg from "../../public/img/YT  focus-section-farmers.png";
-import educationfocusareaimg from "../../public/img/YT focus-section-education.png";
-import healthfocusareaimg from "../../public/img/YT focus-section-Health.png";
-import governmentfocusareaimg from "../../public/img/YT focus-section-good-governance.png";
-import economyfocusareaimg from "../../public/img/YT focus-section-economy.png";
-import waterfocusareaimg from "../../public/img/YT  focus-section-water.png";
+import youthfocusareaimg from "../../public/img/Youth.webp";
+import womenfocusareaimg from "../../public/img/Women.webp";
+import farmerfocusareaimg from "../../public/img/Farmers.webp";
+import educationfocusareaimg from "../../public/img/Education.webp";
+import healthfocusareaimg from "../../public/img/Health.webp";
+import governmentfocusareaimg from "../../public/img/GoodGovernance.webp";
+import economyfocusareaimg from "../../public/img/Economy.webp";
+import waterfocusareaimg from "../../public/img/Water.webp";
 import FocusAreaContent from "@/components/FocusArea/FocusAreaContent";
 
 const FocusArea = () => {
@@ -60,7 +60,7 @@ const FocusArea = () => {
 
         <div className='flex w-full md:w-[90%]  md:mt-40 flex-col md:flex-row mx-auto p-10'>
           <div className="w-full md:w-1/2 flex flex-col md:flex-row">
-            <img src="./img/Yashomati Thakur HD.png" className="w-full md:w-3/5 z-40" alt="profile-header" />
+            <img src="./img/Yashomati Thakur HD.webp" className="w-full md:w-3/5 z-40" alt="profile-header" />
             <img src={images[active]} className="p-5 md:p-0 w-full md:w-1/4 absolute opacity-50 left-0 md:left-[18%]" alt="background-header" />
           </div>
 

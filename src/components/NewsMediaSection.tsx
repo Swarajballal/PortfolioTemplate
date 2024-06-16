@@ -34,7 +34,7 @@ const NewsMediaSection: React.FC = () => {
     <section
       id="NEWS&MEDIA"
       className="flex flex-col w-full relative items-center justify-center gap-7 md:gap-14 -mt-24 newsmedia-section"
-      style={{ backgroundImage: "url('./img/news-bg.png')", backgroundSize: 'cover', backgroundColor: '#D5D5D5' }}
+      style={{ backgroundImage: "url('./img/News_Background.webp')", backgroundSize: 'cover', backgroundColor: '#D5D5D5' }}
     >
       <div className="flex flex-col-reverse md:flex-col items-center mt-32 md:mt-24">
         <img src="./img/down-white.png" alt="down-arrow-profile-header" className="h-8 w-2" />
@@ -45,7 +45,7 @@ const NewsMediaSection: React.FC = () => {
       </div>
       <div className="w-full px-6 md:px-28 flex flex-col md:flex-row">
         <div className='w-full md:w-1/5 self-center'>
-        <img src="./img/old-man.png" alt="News 1" className="w-full px-10 md:px-0 rounded-xl mb-4 md:mb-0" />
+        <img src="./img/SketchImage_News.webp" alt="News 1" className="w-full px-10 md:px-0 rounded-xl mb-4 md:mb-0" />
         </div>
         <Swiper modules={[Autoplay, Pagination, Navigation, Grid]} {...newsSliderSettings} className="w-full md:w-4/5">
           <SwiperSlide>
