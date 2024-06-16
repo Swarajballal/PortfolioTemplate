@@ -2,8 +2,8 @@ import React from 'react';
 
 const ConnectSection: React.FC = () => {
   return (
-    <section className="flex w-full relative items-center justify-center gap-28" style={{ backgroundImage: "url('/img/YT-Form-Bg.png')", backgroundSize: 'cover', backgroundColor: '#EAEAEA' }}>
-      <div className="bg-blue-950 w-4/12 h-min pb-16 rounded-3xl mt-32">
+    <section className="flex flex-col md:flex-row w-full p-6 md:p-0 relative items-center justify-center gap-10 md:gap-28" style={{ backgroundImage: "url('/img/YT-Form-Bg.png')", backgroundSize: 'cover', backgroundColor: '#EAEAEA' }}>
+      <div className="bg-blue-950 w-full md:w-4/12 h-min pb-8 md:pb-16 rounded-3xl mt-32">
         <div className="h-full w-[90%] mx-auto mt-10 flex flex-col items-start gap-4">
           <h1 className="font-semibold font-sans text-3xl tracking-tighter text-white">Let's Connect</h1>
           <p className="text-left font-serif font-semibold text-white">Write a message to share it with Yashomati Chandrakant Thakur.</p>
@@ -32,17 +32,17 @@ const ConnectSection: React.FC = () => {
           </form>
         </div>
       </div>
-      <div className="flex flex-col items-start w-1/3 h-[60%] mt-20 gap-2">
+      <div className="w-full flex flex-col items-center md:items-start md:w-1/3 h-[60%] mt-0 md:mt-20 gap-2">
         <div className="flex flex-row items-end">
-          <img src="/icons/call-icon.png" alt="call-icon" className="h-40 w-40" />
-          <span className="font-semibold text-2xl text-[#fac53b]">Call On</span>
+          <img src="/icons/call-icon.png" alt="call-icon" className="h-10 md:h-40 w-10 md:w-40" />
+          <span className="font-semibold text-3xl text-[#fac53b]">Call On</span>
         </div>
-        <h1 className="text-white font-black text-5xl font-sans">+91 12345678</h1>
-        <p className="text-[#fac53b] font-semibold text-3xl font-sans tracking-tighter">
+        <h1 className="text-white font-black text-2xl md:text-5xl font-sans">+91 77450 81111</h1>
+        <p className="text-[#fac53b] font-semibold text-lg md:text-3xl font-sans tracking-tighter">
           to directly connect with the
           office of
         </p>
-        <span className="text-white font-semibold text-3xl font-sans tracking-tighter underline">MLA Yashomati Chandrakant Thakur</span>
+        <span className="text-white font-semibold text-xl md:text-3xl font-sans tracking-tighter underline pb-20 md:pb-0">MLA Yashomati Chandrakant Thakur</span>
       </div>
     </section>
   );
