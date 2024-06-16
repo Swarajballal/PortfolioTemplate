@@ -18,7 +18,7 @@ const NavBar = () => {
         { label: 'ASSEMBLY', path: null }
     ];
 
-    const handleNavigation = (item) => {
+    const handleNavigation = (item: { label: string, path: string | null }) => {
         setActive(item.label);
         if (item.path && item.path.startsWith('/')) {
             navigate(item.path);
@@ -57,14 +57,19 @@ const NavBar = () => {
                                     loading='lazy'
                                     className="w-16 h-6 self-center cursor-pointer"
                                     alt="live_button"
-                                    onClick={() => navigate('/')}z
+                                    onClick={() => navigate('/')}
                                 />
                             )}
                         </React.Fragment>
                     ))}
                 </div>
                 <div className="lg:hidden flex items-center">
-                    <button onClick={() => setMenuOpen(!menuOpen)} className="focus:outline-none">
+                    <button
+                        type="button"
+                        onClick={() => setMenuOpen(!menuOpen)}
+                        className="focus:outline-none"
+                        aria-label="Toggle menu"
+                    >
                         <svg
                             className="w-6 h-6"
                             fill="none"

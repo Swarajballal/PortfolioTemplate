@@ -18,12 +18,15 @@ import economyfocusareaimg from "../../public/img/Economy.webp";
 import waterfocusareaimg from "../../public/img/Water.webp";
 import FocusAreaContent from "@/components/FocusArea/FocusAreaContent";
 
-const FocusArea = () => {
-  const [active, setActive] = useState('Youth');
-  const [isMobile, setIsMobile] = useState(false);
-  const FocusAreaItems = ['Youth', 'Women', 'Farmer', 'Education', 'HealthCare', 'Good Governance', 'Economy', 'Water'];
+// Define the type for focus area keys
+type FocusAreaKey = 'Youth' | 'Women' | 'Farmer' | 'Education' | 'HealthCare' | 'Good Governance' | 'Economy' | 'Water';
 
-  const images = {
+const FocusArea = () => {
+  const [active, setActive] = useState<FocusAreaKey>('Youth');
+  const [isMobile, setIsMobile] = useState(false);
+  const FocusAreaItems: FocusAreaKey[] = ['Youth', 'Women', 'Farmer', 'Education', 'HealthCare', 'Good Governance', 'Economy', 'Water'];
+
+  const images: Record<FocusAreaKey, string> = {
     'Youth': youthfocusareaimg,
     'Women': womenfocusareaimg,
     'Farmer': farmerfocusareaimg,
@@ -65,7 +68,7 @@ const FocusArea = () => {
           </div>
 
           <div className='m-auto text-center md:text-start w-full md:w-1/2 pb-12 md:pb-0'>
-            <h1 className="text-2xl md:text-7xl font-black bg-gradient-to-r from-violet-900 to-blue-600 ... bg-clip-text text-transparent">Focus Area</h1>
+            <h1 className="text-2xl md:text-7xl font-black bg-gradient-to-r from-violet-900 to-blue-600 bg-clip-text text-transparent">Focus Area</h1>
             <p className='text-xl md:text-3xl font-black text-white'>{active}</p>
           </div>
         </div>

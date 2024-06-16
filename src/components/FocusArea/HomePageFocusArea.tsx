@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import FocusAreaItem from '@/components/FocusArea/FocusAreaItem';
 import MainFocusArea from '@/components/FocusArea/MainFocusArea';
 import { Swiper, SwiperSlide } from 'swiper/react';

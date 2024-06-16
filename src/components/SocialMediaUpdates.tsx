@@ -8,11 +8,12 @@ const SocialMediaUpdates: React.FC = () => {
       <div className="flex flex-col items-center justify-center bg-[#EAEAEA] p-6 md:p-0 md:pb-20" style={{ backgroundImage: "url('./img/Feed_Background.webp')", backgroundSize: 'cover', backgroundColor: '#EAEAEA' }}>
         <div className="flex flex-col-reverse md:grid md:grid-cols-3 w-full md:w-[90%] gap-4">
           <div className="shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-2xl w-full md:w-fit">
-            <Timeline
-              dataSource={{ sourceType: "profile", screenName: "AdvYashomatiINC" }}
-              options={{ width: "400", height: "500" }}
-              className="w-full h-full md:w-[400px] md:h-[500px]"
-            />
+            <div className="w-full h-full md:w-[400px] md:h-[500px]">
+              <Timeline
+                dataSource={{ sourceType: "profile", screenName: "AdvYashomatiINC" }}
+                options={{ width: "400", height: "500" }}
+              />
+            </div>
           </div>
           <div className="shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-2xl w-full md:w-fit">
             <iframe

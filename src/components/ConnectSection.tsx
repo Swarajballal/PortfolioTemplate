@@ -1,8 +1,9 @@
-import React from 'react';
 import emailjs from 'emailjs-com';
+import React from 'react';
 
-const ConnectSection = () => {
+const ConnectSection: React.FC = () => {
 
+  // @ts-expect-error
   const sendEmail = (e) => {
     e.preventDefault();
 

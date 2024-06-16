@@ -10,7 +10,7 @@ const About = () => {
         </div>
         
         <div className='flex flex-col md:flex-row w-[90%] mt-6 md:mt-32 mx-auto items-center'>
-          <img src="./img/Yashomati Thakur HD.png" className="w-[60%] md:w-[30%]" alt="profile-header" />
+          <img src="./img/Yashomati Thakur HD.webp" className="w-[60%] md:w-[30%]" alt="profile-header" />
           <div className='mt-4 md:mt-0 md:ml-8 text-center md:text-start'>
             <h1 className="text-2xl md:text-5xl font-black bg-gradient-to-r from-violet-900 to-blue-600 bg-clip-text text-transparent">Yashomati Chandrakant Thakur</h1>
             <p className='text-lg md:text-xl text-white mt-2 pb-16 md:pb-0'>Championing Compassionate Leadership and Progress for Over 15 Years</p>
